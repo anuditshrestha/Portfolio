@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <style>
+       *{
+        margin:0;
+        padding:0;
+        
+       }
+
+       body{
+            background-color:rgb(26, 8, 50);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            padding-bottom: 60px;
+        }
+
+        nav{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 75px;
+            background-color : rgb(25, 25, 117);   
+         
+        } 
+
+        nav ul{ 
+            display:flex;
+            justify-content: center;
+        }
+
+        nav ul li{
+            list-style:none;
+            margin: 0 23px;
+        }
+
+        .left{
+          /* display:flex;
+         justify-content: flex-end; */
+         /* align-items: left;  */
+          position:relative;
+            right:100px;
+            font-size: 2 rem; 
+        }
+
+        .firstSection{
+            width: 100%;
+            margin-top: 75px;
+
+        }
+
+        #heroSection{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            
+        }
+
+        .leftSection{
+           
+            font-size: 2rem;
+        }
+
+        .rightSection img{
+            width: 75%;
+            margin: 40px;
+        }
+    
+        .action{
+            display: flex;
+            margin-top: 24px;
+            justify-content: center;
+        }
+        
+        button{
+            width: 120px;
+            height:60px;
+            border-radius: 60px;
+            background-color: aqua;
+            font-size: large;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        #heroPic{
+            width: 600px;
+        }
+
+        @media screen and (max-width:800px){
+            #heroPic{
+                width: 400px;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+            <nav>
+                    <div class="left">Portfolio</div>
+                    </div class="right">
+                        <ul>
+                        <li> Home <a href= ></a></li>
+                        <li>About</li>       
+                        <li>Projects</li>
+                        <li>Contact Me</li>
+                        <li>Resume</li>
+
+                        </li></ul>
+                    </div>
+            </nav>
+    </header>
+
+
+    <main>
+            <div class="firstSection">
+                <div id="heroSection">
+                    <div class="leftSection">
+                    Hi, 
+                    <div>My name is Anudit</div>
+                    </div>
+                    <div class="rightSection">
+                        <img src="pic2.png" id="heroPic" alt="">
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="action">
+                <button id="clickTrial">Click Me</button>
+            </div>
+            
+    </main>
+    
+
+    <script>
+        var btn=document.getElementById("clickTrial");
+        $(document).ready(function(){
+            $('#clickTrial').click(function(){
+                
+                alert('button is working');
+            })
+        })
+
+    </script>
+</body> 
+</html>
